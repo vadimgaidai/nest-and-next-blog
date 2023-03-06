@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['next', 'turbo', 'airbnb', 'eslint:recommended', 'prettier'],
+  extends: ['next', 'turbo', 'airbnb', 'airbnb/hooks', 'eslint:recommended', 'prettier'],
   plugins: ['eslint-plugin-prettier'],
   rules: {
     'prettier/prettier': [

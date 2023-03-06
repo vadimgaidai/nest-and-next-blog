@@ -1,5 +1,5 @@
 {
-  "name": "web",
+  "name": "blog",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -9,19 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/server": "^11.10.0",
+    "@emotion/styled": "^11.10.6",
+    "@mui/material": "^5.11.11",
     "next": "^13.1.1",
+    "nextjs-progressbar": "^0.0.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "ui": "*"
+    "ui": "*",
+    "utils": "*"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
-    "eslint": "7.32.0",
-    "eslint-config-custom": "*",
-    "tsconfig": "*",
     "@types/node": "^17.0.12",
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
+    "babel-plugin-import": "^1.13.6",
+    "eslint-config-custom": "*",
+    "tsconfig": "*",
     "typescript": "^4.5.3"
   }
 }

@@ -1,9 +1,12 @@
 import { Button } from 'ui'
 import { NextPage } from 'next/types'
+import { Typography } from '@mui/material'
 
 const Web: NextPage = () => (
   <div>
-    <h1>Web</h1>
+    <Typography >
+      Web
+    </Typography>
     <Button />
   </div>
 )
