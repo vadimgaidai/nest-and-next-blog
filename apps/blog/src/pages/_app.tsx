@@ -6,7 +6,7 @@ import NextNProgress from 'nextjs-progressbar'
 import { ThemeProvider } from '@mui/material/styles'
 import { CacheProvider, EmotionCache, Global } from '@emotion/react'
 
-import { createEmotionCache } from 'utils'
+import createEmotionCache from 'src/common/createEmotionCache'
 import { theme, GlobalStyles } from 'ui'
 
 // Client-side cache, shared for the whole session of the user in the browser.
@@ -29,5 +29,9 @@ const MyApp: FC<MyAppProps> = ({ Component, emotionCache = clientSideEmotionCach
     </ThemeProvider>
   </CacheProvider>
 )
+
+MyApp.defaultProps = {
+  emotionCache: clientSideEmotionCache,
+}
 
 export default MyApp

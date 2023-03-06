@@ -7,7 +7,7 @@ import Document, {
   DocumentProps,
   DocumentContext,
 } from 'next/document'
-import { createEmotionCache } from 'utils'
+import createEmotionCache from 'src/common/createEmotionCache'
 import createEmotionServer from '@emotion/server/create-instance'
 
 interface MyDocumentProps extends DocumentProps {

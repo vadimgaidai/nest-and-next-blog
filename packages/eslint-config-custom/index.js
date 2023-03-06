@@ -1,6 +1,14 @@
 module.exports = {
   extends: ['next', 'turbo', 'airbnb', 'airbnb/hooks', 'eslint:recommended', 'prettier'],
   plugins: ['eslint-plugin-prettier'],
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        moduleDirectory: ['node_modules', './'],
+      },
+    },
+  },
   rules: {
     'prettier/prettier': [
       'warn',

@@ -4,9 +4,7 @@ import { Typography } from '@mui/material'
 
 const Web: NextPage = () => (
   <div>
-    <Typography >
-      Web
-    </Typography>
+    <Typography>Web</Typography>
     <Button />
   </div>
 )

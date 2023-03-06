@@ -10,7 +10,6 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
-    "format:staged": "lint-staged",
     "format:write": "prettier --write \"**/*.{js,jsx,ts,tsx,md}\"",
     "prepare": "husky install"
   },
@@ -24,7 +23,6 @@
   },
   "dependencies": {
     "eslint": "^8.35.0",
-    "lint-staged": "^13.1.0",
     "prettier": "^2.8.3"
   },
   "packageManager": "yarn@1.22.19"
