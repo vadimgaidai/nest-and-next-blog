@@ -9,6 +9,7 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
+    "clean": "turbo run clean && rm -rf node_modules",
     "lint": "turbo run lint",
     "format:write": "prettier --write \"**/*.{js,jsx,ts,tsx,md}\"",
     "prepare": "husky install"
